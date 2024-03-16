@@ -1,4 +1,6 @@
-﻿namespace APIFun.Data
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace APIFun.Data
 {
     public class EFBowlerRepository : IRepository
     {
@@ -7,6 +9,9 @@
         { 
             _bowlerContext = temp;
         }
-        public IEnumerable<Bowlers> Bowlers => _bowlerContext.Bowlers;
+        public IEnumerable<Bowler> Bowlers => _bowlerContext.Bowlers;
+
+
+        public IEnumerable<Team> Teams => _bowlerContext.Teams;
     }
 }

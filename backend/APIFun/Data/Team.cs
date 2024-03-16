@@ -7,7 +7,7 @@ namespace APIFun
     {
         public Team()
         {
-            Bowlers = new HashSet<Bowlers>();
+            Bowlers = new HashSet<Bowler>();
           
         }
 
@@ -15,7 +15,7 @@ namespace APIFun
         public string TeamName { get; set; } = null!;
         public long? CaptainId { get; set; }
 
-        public virtual ICollection<Bowlers> Bowlers { get; set; }
+        public virtual ICollection<Bowler> Bowlers { get; set; }
       
     }
 }

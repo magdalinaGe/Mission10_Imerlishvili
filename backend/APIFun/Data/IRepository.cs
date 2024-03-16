@@ -3,6 +3,7 @@
     public interface IRepository
     {
         //Data that we can loop through
-        IEnumerable<Bowlers> Bowlers { get; }   
+        IEnumerable<Bowler> Bowlers { get; }
+        IEnumerable<Team> Teams { get; }
     }
 }

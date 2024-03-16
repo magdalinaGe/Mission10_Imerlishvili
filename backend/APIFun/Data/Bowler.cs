@@ -4,13 +4,14 @@ using System.ComponentModel.DataAnnotations;
 
 namespace APIFun
 {
-    public partial class Bowlers
+    public partial class Bowler
     {
         //public Bowler()
         //   {
         // BowlerScores = new HashSet<BowlerScore>();
         //  }
         [Key]
+        [Required]
         public long BowlerId { get; set; }
         public string? BowlerLastName { get; set; }
         public string? BowlerFirstName { get; set; }
